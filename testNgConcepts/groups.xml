@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite">
+	<test name="test">
+		<groups>
+			<run>
+				<include name="smokeTest"/>
+				<include name="regression"/>
+				<exclude name="retesting"/>
+				<include name="window.*"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="testNgConcepts.Groups"/>
+			<class name="testNgConcepts.Group2"/>
+		</classes>
+	</test>
+</suite>

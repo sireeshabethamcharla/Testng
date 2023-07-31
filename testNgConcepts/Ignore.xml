@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suites">
+	<test name="Test1">
+		<classes>
+			<class name="testNgConcepts.ignoreClass">
+				<methods>
+					<!--> include method<!-->
+					<include name="test4"></include>
+				</methods>
+			</class>
+			<class name="testNgConcepts.IgnoreClass2">
+				<methods>
+					<!-->ignore method by .xml<!-->
+					<exclude name="test9"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
